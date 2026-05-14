@@ -4,8 +4,8 @@ This repository brings together the main pieces of the **SciNeM** stack for hete
 
 | Component | Role | Path / upstream |
 |-----------|------|-----------------|
-| **SciNeM (frontend)** | Web application: run (constrained) metapath queries, explore and visualise results. | `SciNeM-frontend/` after `git submodule update` — [athenarc/SciNeM](https://github.com/athenarc/SciNeM) |
-| **SciNeM-workflows (backend)** | Spark workflows invoked by the UI: entity ranking (HRank), similarity join and search (LSH), community detection, path searching, and HIN transformation. | `SciNeM-backend/` after `git submodule update` — [athenarc/SciNeM-workflows](https://github.com/athenarc/SciNeM-workflows) |
+| **SciNeM (frontend)** | Web application: run (constrained) metapath queries, explore and visualise results. | [athenarc/SciNeM](https://github.com/athenarc/SciNeM) |
+| **SciNeM-workflows (backend)** | Spark workflows invoked by the UI: entity ranking (HRank), similarity join and search (LSH), community detection, path searching, and HIN transformation. | [athenarc/SciNeM-workflows](https://github.com/athenarc/SciNeM-workflows) |
 | **Atrapos** | Research prototype that speeds up batches of metapath queries using **sparse matrix multiplication**, an **overlap tree (OTree)** index, and **caching** of intermediate results. | [`Atrapos/`](Atrapos/) (tracked in this repo) |
 
 GitHub does not follow submodule checkouts in the parent tree, so use the **athenarc/…** links to browse frontend and backend source on the web.
