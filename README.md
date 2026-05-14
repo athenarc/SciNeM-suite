@@ -1,12 +1,12 @@
 # SciNeM-suite
 
-This repository brings together the main pieces of the **SciNeM** stack for heterogeneous information network (HIN) mining,.
+This repository brings together the main pieces of the **SciNeM** stack for heterogeneous information network (HIN) mining.
 
-| Component | Path | Role |
+| Component | Role | Path |
 |-----------|------|------|
-| **SciNeM (frontend)** | [`SciNeM-frontend/`](SciNeM-frontend/) | Web application: run (constrained) metapath queries, explore and visualise results. |
-| **SciNeM-workflows (backend)** | [`SciNeM-backend/`](SciNeM-backend/) | Spark workflows invoked by the UI: entity ranking (HRank), similarity join and search (LSH), community detection, path searching, and HIN transformation. |
-| **Atrapos** | [`Atrapos/`](Atrapos/) | Research prototype that speeds up batches of metapath queries using **sparse matrix multiplication**, an **overlap tree (OTree)** index, and **caching** of intermediate results. |
+| **SciNeM (frontend)** | Web application: run (constrained) metapath queries, explore and visualise results. | [`SciNeM-frontend/`](SciNeM-frontend/) |
+| **SciNeM-workflows (backend)** | Spark workflows invoked by the UI: entity ranking (HRank), similarity join and search (LSH), community detection, path searching, and HIN transformation. | [`SciNeM-backend/`](SciNeM-backend/) |
+| **Atrapos** | Research prototype that speeds up batches of metapath queries using **sparse matrix multiplication**, an **overlap tree (OTree)** index, and **caching** of intermediate results. | [`Atrapos/`](Atrapos/) |
 
 ---
 
