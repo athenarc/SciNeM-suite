@@ -2,11 +2,13 @@
 
 This repository brings together the main pieces of the **SciNeM** stack for heterogeneous information network (HIN) mining.
 
-| Component | Role | Path |
-|-----------|------|------|
-| **SciNeM (frontend)** | Web application: run (constrained) metapath queries, explore and visualise results. | [`SciNeM-frontend/`](SciNeM-frontend/) |
-| **SciNeM-workflows (backend)** | Spark workflows invoked by the UI: entity ranking (HRank), similarity join and search (LSH), community detection, path searching, and HIN transformation. | [`SciNeM-backend/`](SciNeM-backend/) |
-| **Atrapos** | Research prototype that speeds up batches of metapath queries using **sparse matrix multiplication**, an **overlap tree (OTree)** index, and **caching** of intermediate results. | [`Atrapos/`](Atrapos/) |
+| Component | Role | Path / upstream |
+|-----------|------|-----------------|
+| **SciNeM (frontend)** | Web application: run (constrained) metapath queries, explore and visualise results. | `SciNeM-frontend/` after `git submodule update` — [athenarc/SciNeM](https://github.com/athenarc/SciNeM) |
+| **SciNeM-workflows (backend)** | Spark workflows invoked by the UI: entity ranking (HRank), similarity join and search (LSH), community detection, path searching, and HIN transformation. | `SciNeM-backend/` after `git submodule update` — [athenarc/SciNeM-workflows](https://github.com/athenarc/SciNeM-workflows) |
+| **Atrapos** | Research prototype that speeds up batches of metapath queries using **sparse matrix multiplication**, an **overlap tree (OTree)** index, and **caching** of intermediate results. | [`Atrapos/`](Atrapos/) (tracked in this repo) |
+
+GitHub does not follow submodule checkouts in the parent tree, so use the **athenarc/…** links to browse frontend and backend source on the web.
 
 ---
 
@@ -37,7 +39,7 @@ SciNeM is an open-source data science tool for exploring and analysing HINs. It 
 
 **Tech stack:** Java/Spring (JHipster), React, MongoDB.
 
-**Where to look next:** full installation (Ubuntu, Spark, MongoDB), development (`./mvnw`, `npm start`), and production builds are documented in [`SciNeM-frontend/README.md`](SciNeM-frontend/README.md). The UI expects workflow code on disk; in a full deployment that path typically points at a checkout of SciNeM-workflows (see `Constants.java` in that project).
+**Where to look next:** full installation (Ubuntu, Spark, MongoDB), development (`./mvnw`, `npm start`), and production builds are documented in the [SciNeM repository README](https://github.com/athenarc/SciNeM/blob/master/README.md). The UI expects workflow code on disk; in a full deployment that path typically points at a checkout of SciNeM-workflows (see `Constants.java` in that project).
 
 ---
 
@@ -47,7 +49,7 @@ It contains the **SciNeM-workflows** Spark jobs used by the SciNeM application: 
 
 **Tech stack:** Python, Apache Spark.
 
-**Where to look next:** HDFS/local paths, `config.json` parameters, and analysis types are described in [`SciNeM-backend/README.md`](SciNeM-backend/README.md).
+**Where to look next:** HDFS/local paths, `config.json` parameters, and analysis types are described in the [SciNeM-workflows repository README](https://github.com/athenarc/SciNeM-workflows/blob/master/README.md).
 
 ---
 
