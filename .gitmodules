@@ -1,0 +1,6 @@
+[submodule "SciNeM-frontend"]
+	path = SciNeM-frontend
+	url = https://github.com/athenarc/SciNeM.git
+[submodule "SciNeM-backend"]
+	path = SciNeM-backend
+	url = https://github.com/athenarc/SciNeM-workflows.git
